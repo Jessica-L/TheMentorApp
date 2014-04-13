@@ -1,4 +1,8 @@
 SampleApp::Application.routes.draw do
+  resource :calendar, :only => [:show]
+
+  resources :events
+
   get "users/new"
   root  to: 'static_pages#home'
   match '/help',    to: 'static_pages#help',    via: 'get'
