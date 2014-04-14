@@ -7,8 +7,8 @@ gem 'rails', '4.0.4'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
 gem 'forem', :github => "radar/forem", :branch => "rails4"
-gem 'event-calendar', :require => 'event_calendar'
-
+gem 'jquery-rest-rails'
+gem 'fullcalendar-rails'
 gem 'devise'
 gem 'protected_attributes'
 
@@ -32,6 +32,7 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 
