@@ -1,5 +1,10 @@
 SampleApp::Application.routes.draw do
+
   devise_for :users
+
+  resource :calendar, :only => [:show]
+
+  resources :events
 
   get "users/new"
 
