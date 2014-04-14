@@ -8,7 +8,9 @@ gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
 gem 'forem', :github => "radar/forem", :branch => "rails4"
 gem 'event-calendar', :require => 'event_calendar'
+
 gem 'devise'
+gem 'protected_attributes'
 
 group :development, :test do
  gem 'sqlite3'
