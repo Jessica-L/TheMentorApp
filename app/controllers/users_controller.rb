@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def index
     #debugger
     @users = User.all
+    #@users.sort_by {|f| f.email}
   end
 
   def new
@@ -21,9 +22,8 @@ class UsersController < ApplicationController
   @title = user.name
   end
 
-
-
   def logout
     env['warden'].logout
+    redirect_to root_path
   end    
 end

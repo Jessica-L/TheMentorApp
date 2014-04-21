@@ -6,9 +6,8 @@
     <li>
       <!--<%= debug session %>-->
       <%= gravatar_for user, size: 25 %>
-      <%= link_to user.username, @user %>
       <%= link_to user.email, @user %>
-
+      <user_session>
     </li>
   <% end %>
 </ul>

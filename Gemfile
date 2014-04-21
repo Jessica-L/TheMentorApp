@@ -11,6 +11,7 @@ gem 'jquery-rest-rails'
 gem 'fullcalendar-rails'
 gem 'devise'
 gem 'protected_attributes'
+gem 'kaminari', '0.15.1'
 
 group :development, :test do
  gem 'sqlite3'
@@ -21,7 +22,7 @@ end
 group :test do
  gem 'selenium-webdriver'
  gem 'capybara'
- gem 'kaminari', '0.15.1'
+ #gem 'kaminari', '0.15.1'
  gem 'debugger'
  gem 'cucumber-rails'
  gem 'cucumber'
