@@ -4,7 +4,6 @@ describe "User pages" do
 
   subject { page } 
 
-  # NOTE: not sure if need to replace :user with :username
   # This is cut and pasted from Listing 7.9 from Mike Hartl tutorial
   describe "profile page" do
     let(:user) { FactoryGirl.create(:user) }

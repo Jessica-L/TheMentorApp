@@ -12,6 +12,7 @@ gem 'fullcalendar-rails'
 gem 'devise'
 gem 'protected_attributes'
 gem 'kaminari', '0.15.1'
+gem 'bcrypt-ruby', '3.1.2'
 
 group :development, :test do
  gem 'sqlite3'
