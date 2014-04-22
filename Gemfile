@@ -27,6 +27,7 @@ group :test do
  gem 'cucumber-rails'
  gem 'cucumber'
  gem 'database_cleaner', '~> 1.2.0'
+ gem 'factory_girl_rails', '4.2.1'
 end
 
 gem 'sass-rails'
