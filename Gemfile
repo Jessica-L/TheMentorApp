@@ -12,6 +12,7 @@ gem 'fullcalendar-rails'
 gem 'devise'
 gem 'protected_attributes'
 gem 'kaminari', '0.15.1'
+gem 'bcrypt-ruby', '3.1.2'
 
 group :development, :test do
  gem 'sqlite3'
@@ -27,6 +28,7 @@ group :test do
  gem 'cucumber-rails'
  gem 'cucumber'
  gem 'database_cleaner', '~> 1.2.0'
+ gem 'factory_girl_rails', '4.2.1'
 end
 
 gem 'sass-rails'
