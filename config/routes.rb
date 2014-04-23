@@ -15,6 +15,7 @@ SampleApp::Application.routes.draw do
   match '/contact', to: 'static_pages#contact', via: 'get'
 
   match '/signout', to: 'users#logout',         via: 'get'
+  match '/profile', to: 'users#profile',  	via: 'get'
   match '/users',   to: 'static_pages#home',    via: 'get'
   match '/index',   to: 'users#index',          via: 'get'
 

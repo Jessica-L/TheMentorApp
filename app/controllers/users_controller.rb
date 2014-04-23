@@ -25,5 +25,8 @@ class UsersController < ApplicationController
   def logout
     env['warden'].logout
     redirect_to root_path
+  end
+  def profile
+  @user = current_user
   end    
 end
