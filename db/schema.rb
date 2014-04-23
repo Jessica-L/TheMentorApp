@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140416225975) do
+ActiveRecord::Schema.define(version: 20140422054747) do
 
   create_table "events", force: true do |t|
     t.string   "title"
@@ -117,6 +117,13 @@ ActiveRecord::Schema.define(version: 20140416225975) do
   add_index "forem_views", ["updated_at"], name: "index_forem_views_on_updated_at"
   add_index "forem_views", ["user_id"], name: "index_forem_views_on_user_id"
   add_index "forem_views", ["viewable_id"], name: "index_forem_views_on_viewable_id"
+
+  create_table "microposts", force: true do |t|
+    t.string   "content"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "",               null: false
