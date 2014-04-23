@@ -1,0 +1,12 @@
+<% if !user_signed_in? %>
+<li><%= link_to "Sign in", 'users/sign_in' %></li>	
+
+<% else %>
+<% provide(:title, current_user.email) %>
+<h1>Your profile:</h1>
+      <%= gravatar_for current_user, size: 100 %>
+      <%= current_user.email %>
+      <user_session>
+    </li>
+<% end %>
+
