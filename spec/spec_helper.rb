@@ -1,8 +1,10 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
+#Spork.trap_method(Rails::Application
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
+#require 'spork'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -37,3 +39,19 @@ RSpec.configure do |config|
   config.order = "random"
   config.include Capybara::DSL
 end
+
+#Spork.each_run do
+ 
+#I18n.backend.reload!
+ 
+#Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+ 
+#require 'factory_girl'
+ 
+#FactoryGirl.definition_file_paths = [
+#File.join(Rails.root, 'spec', 'factories')
+#]
+ 
+#FactoryGirl.find_definitions
+ 
+#end
