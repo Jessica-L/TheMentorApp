@@ -6,13 +6,13 @@ ruby '2.0.0'
 gem 'rails', '4.0.4'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
-gem 'forem', :github => "radar/forem", :branch => "rails4"
 gem 'jquery-rest-rails'
 gem 'fullcalendar-rails'
 gem 'devise'
 gem 'protected_attributes'
 gem 'kaminari', '0.15.1'
 gem 'bcrypt-ruby', '3.1.2'
+gem 'simple_form'
 
 group :development, :test do
  gem 'sqlite3'

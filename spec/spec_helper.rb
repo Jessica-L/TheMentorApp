@@ -9,7 +9,6 @@ Spork.prefork do
   require 'rspec/rails'
   require 'rspec/autorun'
   require 'factory_girl_rails'
-  FactoryGirl.find_definitions
 
   # Requires supporting files with custom matchers and macros, etc,
   # in ./support/ and its subdirectories.
@@ -46,17 +45,17 @@ Spork.prefork do
   end
 end
 
-Spork.each_run do
+# Spork.each_run do
 
- I18n.backend.reload!
+#  I18n.backend.reload!
  
- Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+#  Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
  
- require 'factory_girl_rails'
+#  require 'factory_girl_rails'
  
- FactoryGirl.definition_file_paths = [
-   File.join(Rails.root, 'spec', 'factories')
- ]
+#  FactoryGirl.definition_file_paths = [
+#    File.join(Rails.root, 'spec', 'factories')
+#  ]
  
- FactoryGirl.find_definitions
-end
+#  FactoryGirl.find_definitions
+# end
