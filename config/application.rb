@@ -61,5 +61,11 @@ module SampleApp
 
     # Adding a line for asset pipeline compatibility
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
+    #Configure generators values
+    config.generators do |g|
+      g.tesst_framework :rspec, :fixture => true
+      g.fixture_replacement :factory_girl_rails, :dir=>"spec/factories"
+    end
   end
 end

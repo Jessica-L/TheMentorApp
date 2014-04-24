@@ -8,6 +8,8 @@ Spork.prefork do
   require File.expand_path("../../config/environment", __FILE__)
   require 'rspec/rails'
   require 'rspec/autorun'
+  require 'factory_girl_rails'
+  FactoryGirl.find_definitions
 
   # Requires supporting files with custom matchers and macros, etc,
   # in ./support/ and its subdirectories.
@@ -50,7 +52,7 @@ Spork.each_run do
  
  Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
  
- require 'factory_girl'
+ require 'factory_girl_rails'
  
  FactoryGirl.definition_file_paths = [
    File.join(Rails.root, 'spec', 'factories')

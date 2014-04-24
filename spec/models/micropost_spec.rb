@@ -1,4 +1,7 @@
 require 'spec_helper'
+require 'factory_girl_rails'
+
+FactoryGirl.find_definitions
 
 describe Micropost do
 
