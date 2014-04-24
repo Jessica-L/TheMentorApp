@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   attr_accessible :username, :email, :password, :password_confirmation, :remember_me
+  
+  has_many :microposts
 end

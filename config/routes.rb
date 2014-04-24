@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
 
+  resources :microposts
+
   devise_for :users
 
   resource :calendar, :only => [:show]
