@@ -2,7 +2,7 @@ SampleApp::Application.routes.draw do
 
   resources :microposts
 
-  devise_for :users
+  devise_for :users, :controllers => {:registrations => "users/registrations", :passwords => "users/passwords" }
 
   resource :calendar, :only => [:show]
 
@@ -20,6 +20,7 @@ SampleApp::Application.routes.draw do
   match '/profile', to: 'users#profile',  	via: 'get'
   match '/users',   to: 'static_pages#home',    via: 'get'
   match '/index',   to: 'users#index',          via: 'get'
+  match 'users/edit', to: 'users#edit',		via: 'post'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
