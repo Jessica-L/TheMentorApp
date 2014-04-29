@@ -4,9 +4,14 @@
 <% else %>
 <% provide(:title, current_user.email) %>
 <h1>Your profile:</h1>
-      <%= gravatar_for current_user, size: 100 %>
-      <%= current_user.email %>
-      <user_session>
+      <%= gravatar_for @user, size: 200 %><br>
+<div>
+      Email: <%= @user.email %><br>
+      Username: <%= @user.username%><br>
+      About me: <%= @user.about_me %><br>
+</div>
+
+      <%= button_to "Edit your profile", '/users/edit', :method => :get %>
     </li>
 <% end %>
 
