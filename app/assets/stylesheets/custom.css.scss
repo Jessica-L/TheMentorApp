@@ -54,6 +54,10 @@ h2 {
   color: $grayLight;
 }
 
+h3 {
+  text-align: center;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -3715,7 +3719,7 @@ input[type="submit"].btn.btn-mini {
 
 .btn-link:hover,
 .btn-link:focus {
-  color: #157ab5;
+  color: #2fa4e7;
   text-decoration: underline;
   background-color: transparent;
 }
