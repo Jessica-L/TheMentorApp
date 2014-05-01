@@ -36,6 +36,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  font:cerulean;
 }
 
 h1 {
@@ -43,6 +44,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  font:cerulean;
 }
 
 h2 {
@@ -52,6 +54,7 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: $grayLight;
+  font:cerulean;
 }
 
 h3 {
