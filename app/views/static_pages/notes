@@ -1,0 +1,24 @@
+<% provide(:title, 'Resources') %>
+<h1>Helpful Resources</h1>
+<p>
+  <p></p>
+<p>
+  <h4>
+    Python is a programming language that lets you work quickly and integrate systems more 
+    effectively. Anything you need to know about Python can be found at 
+    <a href="https://www.python.org/">python.org</a>.  Try free online mini coding classes at
+    <a href="http://www.codecademy.com/tracks/python">Codecademy</a>.
+  </h4>
+</p>
+
+<p></p>
+<p>
+  <h4>
+    <a href="http://www.codeproject.com/>Code Project</a>
+    is for everyone learning to code or wanting to enhance their skills.
+    If you want to know more about object oriented programming, read this Code Project article:
+    <a href="http://www.codeproject.com/Articles/22769/Introduction-to-Object-Oriented-Programming-Concep">Introduction to Object Oriented Programming Concepts</a>.
+  </h4>
+</p>
+
+</p>
