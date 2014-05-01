@@ -19,7 +19,6 @@
 TAGS
 log/
 *.log
-*.lock
 *.sqlite3
 
 /vendor
